@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<ListView android:id="@android:id/list"               
+     android:layout_width="fill_parent"               
+     android:layout_height="wrap_content"             
+     android:background="#0000FF"               
+     android:layout_weight="1"               
+     android:drawSelectorOnTop="false"/>     
+<TextView android:id="@android:id/empty"               
+     	android:layout_width="match_parent"               
+     	android:layout_height="wrap_content"               
+     	android:background="#FF0000"               
+     	android:text="No Media File"/>
+    
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    
+<TableRow android:layout_weight="1">
+  <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Media Palyer Control"
+    />
+</TableRow>
+<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_weight="1" android:layout_gravity="center_vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+        <Button android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnStart" android:text="Start" android:layout_gravity="right"></Button>
+        <Button android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnStop" android:text="Stop"></Button>
+        <Button android:layout_gravity="top" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnPause" android:text="Pause"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BtnPrev" android:text="Prev"></Button>
+        <Button android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnNext" android:text="Next" android:layout_gravity="bottom"></Button>
+    </LinearLayout>
+    <Button android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnVolumeUp" android:text="v↑"></Button>
+</TableRow>
+</TableLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BtnFastForward" android:text="FastForward"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BtnFastBackward" android:text="FastBackward"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/BtnResume" android:text="resume"></Button>
+    <Button android:layout_gravity="right" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/BtnVolumeDown" android:text="v↓"></Button>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+</LinearLayout>
+</LinearLayout>
